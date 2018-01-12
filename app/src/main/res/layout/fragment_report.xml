@@ -1,0 +1,107 @@
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe_report"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:fab="http://schemas.android.com/apk/res-auto"
+        tools:context=".MainActivity">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/headerLay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:layout_alignParentTop="true"
+            android:background="#135557"
+            >
+
+            <TextView
+                android:id="@+id/txtheaderfunds"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                android:textColor="#f8f8f8"
+                android:text="Departemen Teknologi Informasi"
+                />
+
+            <TextView
+                android:id="@+id/txtheaderyear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_weight="0"
+                android:textColor="#f8f8f8"
+                android:text="2017"
+                />
+
+        </LinearLayout>
+
+        <ExpandableListView
+            android:id="@+id/lvExp"
+            android:layout_below="@+id/headerLay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ExpandableListView>
+
+        <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/test"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </RelativeLayout>
+
+            <com.github.clans.fab.FloatingActionMenu
+
+                android:id="@+id/social_floating_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                fab:menu_backgroundColor="@android:color/transparent"
+                fab:menu_icon="@mipmap/ic_aarrow"
+                fab:menu_labels_colorNormal="#333"
+                fab:menu_labels_colorPressed="#444"
+                fab:menu_labels_colorRipple="#66efecec"
+                fab:menu_labels_ellipsize="end"
+                fab:menu_labels_singleLine="true"
+                app:fab_showAnimation="@anim/fab_scale_up">
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/floating_downloadDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_download"
+                    fab:fab_size="mini"
+                    fab:fab_label="Download Detil Laporan" />
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/floating_download"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_download"
+                    fab:fab_size="mini"
+                    fab:fab_label="Download Laporan" />
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/floating_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_share"
+                    fab:fab_size="mini"
+                    fab:fab_label="Share Laporan" />
+
+            </com.github.clans.fab.FloatingActionMenu>
+        </android.support.design.widget.CoordinatorLayout>
+    </RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_menu"
+            android:icon="@mipmap/menu_icon_dark"
+            android:title="Menu Utama" />
+        <item
+            android:id="@+id/nav_report"
+            android:icon="@mipmap/laporan_icon_dark"
+            android:title="Laporan P. Anggaran" />
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@mipmap/dashboard_icon_dark"
+            android:title="Dashboard" />
+        <item
+            android:id="@+id/nav_update"
+            android:icon="@mipmap/info_update_icon_dark"
+            android:title="Informasi Terkini" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@mipmap/about_icon_dark"
+            android:title="FAQ Aplikasi" />
+    </group>
+
+    <item android:title="Akun">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@mipmap/logout_icon"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>
